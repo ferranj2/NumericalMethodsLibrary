@@ -77,6 +77,15 @@ public:
   }//end constructor
 
 public://METHODS
+  //Make a copy of a matrix
+  matrix copymat(matrix A){
+    matrix copy(A.R,A.C);//Declare a
+    for(int i=0;i<A.N;i++){
+      copy.DATA[i] = A.DATA[i];
+    }//end "i" loop
+    return copy;
+  }
+
   //Compute the trace of a matrix
   double trace(void){
     if(R==C){
@@ -153,6 +162,16 @@ public://METHODS
   }
 
   //OPERATOR OVERLOADING
+
+  //Copy a matrix to another variable declared as a matrix.
+  void operator=(matrix B){
+    this->R = B.R;
+    this->C = B.C;
+    this->N = B.N;
+    for(int i =0; i<N;i++){
+      *(DATA + i) = B.DATA[i];
+    }//end "i" loop
+  }//end matA = matB
 
   //Matrix addition with a constant
   matrix operator+(double B){
