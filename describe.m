@@ -10,8 +10,13 @@
 % range, those that measure location (mean and median), and those that
 % measure shape (skewness and kurtosis).
 %% Formulae
-% * $$\bar{X} = \frac{1}{N}\left(\sum_{i=1}^{N}{x_{i}}\right)$
-% * $$Var(x) = \frac{1}{N}\left(\sum_{i=1}^{N}(x_{i} - \bar{X})^{2}\right)$
+%  Arithmetic mean
+%%
+% $\bar{X} = \frac{1}{N}\left(\sum_{i=1}^{N}{x_{i}}\right)$
+%%
+%  Variance
+%% 
+% $Var(x) = \frac{1}{N}\left(\sum_{i=1}^{N}(x_{i} - \bar{X})^{2}\right)$
 %% Required Plugins
 % * none
 %% Changelog
