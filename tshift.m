@@ -30,10 +30,7 @@
 % positive direction
 % * OUTPUT(*C_out*): Coefficients of the shifted polynomial.
 %% Function definition
-S = 5;
-C_in = [-6,+2,-1,-4,+3];
-C_out = Tshift(C_in,S)
-function C_out = Tshift(C_in,S)
+function C_out = tshift(C_in,S)
 [r,c] = size(C_in);
 n = c+1;%Polynomial's order
 if S == 0
